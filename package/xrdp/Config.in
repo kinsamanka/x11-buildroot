@@ -1,0 +1,13 @@
+config BR2_PACKAGE_XRDP
+	bool "xrdp"
+	depends on BR2_PACKAGE_XORG7
+	depends on BR2_PACKAGE_OPENSSL
+	depends on BR2_PACKAGE_JPEG
+	select BR2_PACKAGE_JPEG_TURBO
+	select BR2_PACKAGE_XLIB_LIBXRANDR
+	select BR2_PACKAGE_XLIB_LIBX11
+	select BR2_PACKAGE_XLIB_LIBXFIXES
+	help
+	  An open source RDP server
+
+	  http://sourceforge.net/projects/xrdp/
